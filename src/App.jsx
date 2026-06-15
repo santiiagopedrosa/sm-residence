@@ -27,6 +27,7 @@ import PageSobre from "./pages/Sobre.jsx";
 import PageServicos from "./pages/Servicos.jsx";
 import PageProjectos from "./pages/Projectos.jsx";
 import PageContactos from "./pages/Contactos.jsx";
+import PagePrivacidade from "./pages/PoliticaPrivacidade.jsx";
 
 export default function App() {
   const [page, setPage] = useState("inicio");
@@ -95,7 +96,8 @@ export default function App() {
         {page === "sobre" && <PageSobre go={go} />}
         {page === "servicos" && <PageServicos go={go} />}
         {page === "projectos" && <PageProjectos go={go} />}
-        {page === "contactos" && <PageContactos />}
+        {page === "contactos" && <PageContactos go={go} />}
+        {page === "privacidade" && <PagePrivacidade go={go} />}
       </main>
       <Footer go={go} />
     </>

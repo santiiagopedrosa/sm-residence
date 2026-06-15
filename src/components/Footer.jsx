@@ -1,5 +1,3 @@
-/* SM Residence — movido de App.jsx, sem alterações no código */
-
 import Logo from "./Logo.jsx";
 import { NAV, CONTACTOS } from "../data/site.js";
 
@@ -22,6 +20,9 @@ export default function Footer({ go }) {
                 {label}
               </button>
             ))}
+            <button className="footer-link" onClick={() => go("privacidade")}>
+              Política de Privacidade
+            </button>
           </div>
           <div>
             <div className="lbl">Morada</div>
@@ -41,7 +42,7 @@ export default function Footer({ go }) {
               <br />
               {CONTACTOS.telefones.map((t) => (
                 <span key={t}>
-                  <a href={`tel:+351${t.replace(/\s/g, "")}`}>{t}</a>
+                  <a href={`tel:${t.replace(/\s/g, "")}`}>{t}</a>
                   <br />
                 </span>
               ))}

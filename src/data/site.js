@@ -2,7 +2,7 @@
 
 export const CONTACTOS = {
   email: "geral@smresidence.pt",
-  telefones: ["218 763 939", "916 967 236"],
+  telefones: ["+351 218 763 939", "+351 916 967 236"],
   morada: ["Edifício Sky Restelo", "Rua Dom Jorge da Costa, Nº5, 4ºA", "1400-423 Belém — Lisboa"],
   mapsEmbed:
     "https://www.google.com/maps?q=Rua+Dom+Jorge+da+Costa+5,+1400-423+Lisboa&output=embed",
@@ -88,10 +88,10 @@ export const PROJECTOS = [
 ];
 
 export const PARCERIAS = [
-  { nome: "Crédito Agrícola", area: "Parceiro financeiro e bancário" },
-  { nome: "Las Kasas", area: "Mediação imobiliária" },
-  { nome: "Remax VS Brothers", area: "Mediação imobiliária" },
-  { nome: "Confrasilvas", area: "Parceiro de construção" },
+  { nome: "Crédito Agrícola", area: "Parceiro financeiro e bancário", logo: "/img/parceiros/credito-agricola.png" },
+  { nome: "Las Kasas", area: "Mediação imobiliária", logo: "/img/parceiros/las-kasas.png" },
+  { nome: "Remax VS Brothers", area: "Mediação imobiliária", logo: "/img/parceiros/remax-vs-brothers.png" },
+  { nome: "Confrasilvas", area: "Parceiro de construção", logo: "/img/parceiros/confrasilvas.png" },
 ];
 
 export const ESPECIALIDADES = [
@@ -111,7 +111,7 @@ export const STATS = [
   ["10+", "Anos de experiência no sector"],
   ["50+", "Escrituras realizadas"],
   ["5", "Anos de garantia pós-venda"],
-  ["100%", "Moinhos 12 vendido"],
+  // "100% Moinhos 12 vendido" removido a pedido do cliente
 ];
 
 export const NAV = [

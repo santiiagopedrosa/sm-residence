@@ -95,7 +95,7 @@ export default function PageSobre({ go }) {
       <section className="section tinted">
         <div className="wrap">
           <div className="reveal" style={{ marginBottom: 50 }}>
-            <div className="eyebrow">Parcerias</div>
+            <div className="eyebrow blue">Parcerias</div>
             <h2 className="h-display h-section">Trabalhamos com os melhores</h2>
             <p className="lead" style={{ marginTop: 20 }}>
               Parceiros financeiros, de mediação e de construção que nos
@@ -106,6 +106,15 @@ export default function PageSobre({ go }) {
           <div className="parcerias reveal">
             {PARCERIAS.map((p) => (
               <div className="parceria" key={p.nome}>
+                {p.logo && (
+                  <img
+                    src={p.logo}
+                    alt={`Logo ${p.nome}`}
+                    className="parceria-logo"
+                    loading="lazy"
+                    onError={(e) => { e.currentTarget.style.display = "none"; }}
+                  />
+                )}
                 <b>{p.nome}</b>
                 <span>{p.area}</span>
               </div>

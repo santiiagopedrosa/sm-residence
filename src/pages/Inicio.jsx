@@ -36,8 +36,8 @@ export default function PageInicio({ go }) {
           </div>
           <div className="hero-meta reveal">
             <span>10+ anos de experiência</span>
-            <span>50+ escrituras realizadas</span>
             <span>Garantia pós-venda de 5 anos</span>
+            <span>Grande Lisboa</span>
           </div>
         </div>
       </section>

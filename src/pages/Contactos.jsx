@@ -5,15 +5,16 @@ import Marks from "../components/Marks.jsx";
 import Arrow from "../components/Arrow.jsx";
 import { CONTACTOS } from "../data/site.js";
 
-export default function PageContactos() {
+export default function PageContactos({ go }) {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
   const [mensagem, setMensagem] = useState("");
+  const [rgpd, setRgpd] = useState(false);
   const [estado, setEstado] = useState(null); // null | "ok" | "erro"
 
   const enviar = () => {
-    if (!nome.trim() || !email.trim() || !mensagem.trim()) {
+    if (!nome.trim() || !email.trim() || !mensagem.trim() || !rgpd) {
       setEstado("erro");
       return;
     }
@@ -54,7 +55,7 @@ export default function PageContactos() {
                 <div className="lbl">Telefone</div>
                 {CONTACTOS.telefones.map((t) => (
                   <div key={t}>
-                    <a href={`tel:+351${t.replace(/\s/g, "")}`} style={{ fontSize: "1.05rem" }}>
+                    <a href={`tel:${t.replace(/\s/g, "")}`} style={{ fontSize: "1.05rem" }}>
                       {t}
                     </a>
                   </div>
@@ -121,8 +122,28 @@ export default function PageContactos() {
                     placeholder="Como podemos ajudar?"
                   />
                 </div>
+                <div className="rgpd">
+                  <input
+                    id="f-rgpd"
+                    type="checkbox"
+                    checked={rgpd}
+                    onChange={(e) => setRgpd(e.target.checked)}
+                  />
+                  <label htmlFor="f-rgpd">
+                    Li e aceito a{" "}
+                    <button
+                      type="button"
+                      style={{ background: "none", border: "none", padding: 0, cursor: "pointer",
+                        color: "var(--bronze)", textDecoration: "underline", font: "inherit" }}
+                      onClick={() => go && go("privacidade")}
+                    >
+                      política de privacidade
+                    </button>
+                    {" "}*
+                  </label>
+                </div>
                 <button className="btn solid" onClick={enviar}>
-                  Enviar mensagem <Arrow />
+                  Contacte-nos <Arrow />
                 </button>
                 {estado === "ok" && (
                   <div className="form-ok">
@@ -132,7 +153,8 @@ export default function PageContactos() {
                 )}
                 {estado === "erro" && (
                   <div className="form-err">
-                    Preencha o nome, o e-mail e a mensagem para podermos responder.
+                    Preencha o nome, o e-mail, a mensagem e aceite a política de
+                    privacidade para podermos responder.
                   </div>
                 )}
               </div>

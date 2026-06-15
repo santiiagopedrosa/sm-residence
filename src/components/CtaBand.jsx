@@ -7,13 +7,13 @@ export default function CtaBand({ go }) {
     <section className="cta-band">
       <div className="wrap cta-inner">
         <div>
-          <div className="eyebrow light">Fale connosco</div>
+          <div className="eyebrow light">Contactos</div>
           <h2 className="h-display h-section">
-            Precisa de nos contactar?
+            Fale connosco
           </h2>
         </div>
         <button className="btn ghost-light" onClick={() => go("contactos")}>
-          Entre em contacto <Arrow />
+          Contacte-nos <Arrow />
         </button>
       </div>
     </section>

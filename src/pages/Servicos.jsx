@@ -40,25 +40,25 @@ export default function PageServicos({ go }) {
         </div>
       </section>
 
-      <section className="section dark">
+      <section className="section tinted">
         <div className="wrap split">
           <div>
-            <div className="eyebrow light">Crédito habitação</div>
+            <div className="eyebrow blue">Crédito habitação</div>
             <h2 className="h-display h-section" style={{ maxWidth: "24ch" }}>
               Apoio na obtenção de crédito
             </h2>
-            <p style={{ color: "rgba(255,255,255,.7)", maxWidth: "58ch", margin: "20px 0 30px" }}>
+            <p className="muted" style={{ maxWidth: "58ch", margin: "20px 0 30px" }}>
               Acompanhamos o cliente em todo o processo de obtenção de crédito,
               com parceiros financeiros e bancários altamente qualificados —
               para habitação própria, secundária ou investimento.
             </p>
-            <button className="btn ghost-light" onClick={() => go("contactos")}>
+            <button className="btn" onClick={() => go("contactos")}>
               Fale connosco <Arrow />
             </button>
           </div>
           <div className="plot">
-            <Marks light />
-            <div className="frame" style={{ borderColor: "rgba(255,255,255,.2)" }}>
+            <Marks blue />
+            <div className="frame">
               <img src={IMG.estrutura} alt="Arquitectura e estrutura de edifício" loading="lazy" />
             </div>
           </div>
