@@ -31,12 +31,12 @@ a{color:inherit;text-decoration:none;}
 .h-page{font-size:clamp(2.4rem,6vw,4.4rem);}
 .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--aco);max-width:62ch;}
 .eyebrow{display:flex;align-items:center;gap:10px;font-size:.72rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.22em;color:var(--bronze);margin-bottom:18px;}
-.eyebrow::before{content:'';width:7px;height:7px;background:var(--bronze);flex:none;}
-.eyebrow.light{color:#D9C49A;}
-.eyebrow.light::before{background:#D9C49A;}
-.eyebrow.blue{color:var(--azul);}
-.eyebrow.blue::before{background:var(--azul);}
+  text-transform:uppercase;letter-spacing:.22em;color:var(--azul);margin-bottom:18px;}
+.eyebrow::before{content:'';width:7px;height:7px;background:var(--azul);flex:none;}
+.eyebrow.light{color:#B0AEDE;}
+.eyebrow.light::before{background:#B0AEDE;}
+.eyebrow.gold{color:var(--bronze);}
+.eyebrow.gold::before{background:var(--bronze);}
 .muted{color:var(--aco);}
 
 /* ---- Botões (quadrados, sem cantos redondos) ---- */
@@ -155,7 +155,7 @@ a{color:inherit;text-decoration:none;}
   transition:background .3s;background:var(--branco);}
 .card:last-child{border-right:none;}
 .card:hover{background:var(--betao);}
-.card .num{font-family:var(--display);font-size:.85rem;color:var(--bronze);letter-spacing:.2em;}
+.card .num{font-family:var(--display);font-size:.85rem;color:var(--azul);letter-spacing:.2em;}
 .card h3{font-family:var(--display);font-weight:500;text-transform:uppercase;
   font-size:1.25rem;line-height:1.25;margin:18px 0 14px;}
 .card p{color:var(--aco);font-size:.95rem;}
@@ -167,7 +167,7 @@ a{color:inherit;text-decoration:none;}
 .svc-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);
   align-items:center;padding:clamp(50px,7vw,80px) 0;border-bottom:1px solid var(--hairline);}
 .svc-row:last-child{border-bottom:none;}
-.svc-row .num{font-family:var(--display);font-size:1rem;color:var(--bronze);letter-spacing:.2em;}
+.svc-row .num{font-family:var(--display);font-size:1rem;color:var(--azul);letter-spacing:.2em;}
 .svc-row h3{font-family:var(--display);font-weight:500;text-transform:uppercase;
   font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.2;margin:14px 0 18px;}
 
@@ -180,19 +180,19 @@ a{color:inherit;text-decoration:none;}
 .proj-overlay{position:absolute;left:0;right:0;bottom:0;padding:28px;
   background:linear-gradient(to top,rgba(13,15,18,.92),transparent);color:var(--branco);}
 .proj-overlay .tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;
-  color:#D9C49A;}
+  color:#A5A4D8;}
 .proj-overlay h3{font-family:var(--display);font-weight:500;text-transform:uppercase;
   font-size:1.5rem;margin-top:8px;}
 .proj-overlay .ver{display:inline-flex;align-items:center;gap:10px;margin-top:12px;
   font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;
-  border-bottom:1px solid var(--bronze);padding-bottom:4px;}
+  border-bottom:1px solid rgba(165,164,216,.7);padding-bottom:4px;}
 
 /* ---- Ficha técnica ---- */
 .ficha{border:1px solid var(--hairline);}
 .ficha-row{display:grid;grid-template-columns:200px 1fr;border-bottom:1px solid var(--hairline);}
 .ficha-row:last-child{border-bottom:none;}
 .ficha-row dt{padding:14px 18px;font-size:.7rem;text-transform:uppercase;
-  letter-spacing:.16em;color:var(--bronze);border-right:1px solid var(--hairline);
+  letter-spacing:.16em;color:var(--azul);border-right:1px solid var(--hairline);
   background:var(--betao);}
 .ficha-row dd{padding:14px 18px;font-size:.94rem;}
 
@@ -203,13 +203,13 @@ a{color:inherit;text-decoration:none;}
 .thumb{border:1px solid var(--hairline);overflow:hidden;padding:0;opacity:.65;
   transition:opacity .25s,border-color .25s;}
 .thumb img{width:100%;aspect-ratio:4/3;object-fit:cover;}
-.thumb.active,.thumb:hover{opacity:1;border-color:var(--bronze);}
+.thumb.active,.thumb:hover{opacity:1;border-color:var(--azul);}
 
 /* ---- Especialidades / Parcerias ---- */
 .chips{display:flex;flex-wrap:wrap;gap:10px;}
 .chip{padding:12px 20px;border:1px solid var(--hairline);font-size:.78rem;
   text-transform:uppercase;letter-spacing:.12em;transition:background .25s,color .25s;}
-.chip:hover{background:var(--ink);color:var(--branco);}
+.chip:hover{background:var(--azul);color:var(--branco);}
 .parcerias{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--hairline);}
 .parceria{padding:40px 30px;border-right:1px solid var(--hairline);transition:background .3s;
   display:flex;flex-direction:column;align-items:flex-start;}
@@ -234,8 +234,8 @@ a{color:inherit;text-decoration:none;}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);}
 .contact-item{padding:26px 0;border-bottom:1px solid var(--hairline);}
 .contact-item .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;
-  color:var(--bronze);margin-bottom:8px;}
-.contact-item a:hover{color:var(--bronze);}
+  color:var(--azul);margin-bottom:8px;}
+.contact-item a:hover{color:var(--azul);}
 .field{margin-bottom:18px;}
 .field label{display:block;font-size:.7rem;text-transform:uppercase;
   letter-spacing:.18em;color:var(--aco);margin-bottom:8px;}
@@ -246,8 +246,8 @@ a{color:inherit;text-decoration:none;}
 .rgpd{display:flex;align-items:flex-start;gap:10px;margin-bottom:20px;font-size:.83rem;
   color:var(--aco);line-height:1.5;}
 .rgpd input[type=checkbox]{width:16px;height:16px;margin-top:2px;flex:none;
-  accent-color:var(--bronze);cursor:pointer;}
-.rgpd a{color:var(--bronze);text-decoration:underline;}
+  accent-color:var(--azul);cursor:pointer;}
+.rgpd a{color:var(--azul);text-decoration:underline;}
 .form-ok{margin-top:16px;padding:14px 18px;border:1px solid var(--bronze);
   color:var(--bronze);font-size:.88rem;}
 .form-err{margin-top:16px;padding:14px 18px;border:1px solid #B3422E;
@@ -260,7 +260,7 @@ a{color:inherit;text-decoration:none;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:50px;
   padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.15);}
 .footer .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;
-  color:#D9C49A;margin-bottom:16px;}
+  color:#9B9AC8;margin-bottom:16px;}
 .footer-link{display:block;padding:6px 0;font-size:.88rem;color:rgba(255,255,255,.75);
   transition:color .25s;text-align:left;}
 .footer-link:hover{color:var(--branco);}

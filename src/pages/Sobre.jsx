@@ -95,7 +95,7 @@ export default function PageSobre({ go }) {
       <section className="section tinted">
         <div className="wrap">
           <div className="reveal" style={{ marginBottom: 50 }}>
-            <div className="eyebrow blue">Parcerias</div>
+            <div className="eyebrow">Parcerias</div>
             <h2 className="h-display h-section">Trabalhamos com os melhores</h2>
             <p className="lead" style={{ marginTop: 20 }}>
               Parceiros financeiros, de mediação e de construção que nos

@@ -43,7 +43,7 @@ export default function PageServicos({ go }) {
       <section className="section tinted">
         <div className="wrap split">
           <div>
-            <div className="eyebrow blue">Crédito habitação</div>
+            <div className="eyebrow">Crédito habitação</div>
             <h2 className="h-display h-section" style={{ maxWidth: "24ch" }}>
               Apoio na obtenção de crédito
             </h2>
