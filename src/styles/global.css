@@ -33,8 +33,8 @@ a{color:inherit;text-decoration:none;}
 .eyebrow{display:flex;align-items:center;gap:10px;font-size:.72rem;font-weight:600;
   text-transform:uppercase;letter-spacing:.22em;color:var(--azul);margin-bottom:18px;}
 .eyebrow::before{content:'';width:7px;height:7px;background:var(--azul);flex:none;}
-.eyebrow.light{color:#B0AEDE;}
-.eyebrow.light::before{background:#B0AEDE;}
+.eyebrow.light{color:#D9C49A;}
+.eyebrow.light::before{background:#D9C49A;}
 .eyebrow.gold{color:var(--bronze);}
 .eyebrow.gold::before{background:var(--bronze);}
 .muted{color:var(--aco);}
@@ -260,7 +260,7 @@ a{color:inherit;text-decoration:none;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:50px;
   padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.15);}
 .footer .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;
-  color:#9B9AC8;margin-bottom:16px;}
+  color:#D9C49A;margin-bottom:16px;}
 .footer-link{display:block;padding:6px 0;font-size:.88rem;color:rgba(255,255,255,.75);
   transition:color .25s;text-align:left;}
 .footer-link:hover{color:var(--branco);}
